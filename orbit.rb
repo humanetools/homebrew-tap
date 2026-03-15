@@ -5,21 +5,21 @@
 class Orbit < Formula
   desc "Unified CLI for monitoring services across cloud platforms"
   homepage "https://github.com/humanetools/orbit"
-  version "0.2.9"
+  version "0.3.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/humanetools/orbit/releases/download/v0.2.9/orbit_0.2.9_darwin_amd64.tar.gz"
-      sha256 "1f50c8818fac354f7f078905b7bafde89cbdfff38659a145e45138d6b789f5ca"
+      url "https://github.com/humanetools/orbit/releases/download/v0.3.0/orbit_0.3.0_darwin_amd64.tar.gz"
+      sha256 "628d3e9419759de7db4a5a1b76489f39e01412bf9ee8a9dffb68239d558f2582"
 
       define_method(:install) do
         bin.install "orbit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/humanetools/orbit/releases/download/v0.2.9/orbit_0.2.9_darwin_arm64.tar.gz"
-      sha256 "e1d006060d3bebb9387a1351fd11bb2196d2f90f11c5b5c76cfe4be3f930d816"
+      url "https://github.com/humanetools/orbit/releases/download/v0.3.0/orbit_0.3.0_darwin_arm64.tar.gz"
+      sha256 "3e1bfdc82e40f7bd4bf14736fe116e0b85cbabcd801405326847132f0f689c58"
 
       define_method(:install) do
         bin.install "orbit"
@@ -29,15 +29,15 @@ class Orbit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/humanetools/orbit/releases/download/v0.2.9/orbit_0.2.9_linux_amd64.tar.gz"
-      sha256 "71a9a8fe493620527d2937f3f811e2064d6151494b7acfa5ef9489bf29563186"
+      url "https://github.com/humanetools/orbit/releases/download/v0.3.0/orbit_0.3.0_linux_amd64.tar.gz"
+      sha256 "2086c86dcf4a845f699aa483682d7bb117ba85c718e18ae1a406574420b46cc1"
       define_method(:install) do
         bin.install "orbit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/humanetools/orbit/releases/download/v0.2.9/orbit_0.2.9_linux_arm64.tar.gz"
-      sha256 "735ab725804760a4a6b3bb36b76327efb2f64e5871a0ce378acfb828a05441b5"
+      url "https://github.com/humanetools/orbit/releases/download/v0.3.0/orbit_0.3.0_linux_arm64.tar.gz"
+      sha256 "dfd39984d53b061421aa24e819cc635fc2431f77d351719070b5f8e0a483fc07"
       define_method(:install) do
         bin.install "orbit"
       end
